@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Análisis de emoción</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Análisis de emoción</h1>
+        <h5>Ingrese el texto a analizar</h5>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" name="text" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Texto</label>
+                    </div>
+                </div>
+                <button id="enviar" class="btn waves-effect waves-light">Procesar
+                    <i class="material-icons right">loop</i>
+                </button>
+            </form>
+        </div>
+
+        <div class="row">
+            <div class="col s5">
+                <table class="highlight bordered responsive-table">
+                    <thead>
+                        <tr>
+                            <th>Emoción</th>
+                            <th>Frecuencia</th>
+                        </tr>
+                    </thead>
+                    <tbody id="freq-tabla">
+                        
+
+                    </tbody>
+                </table>
+                <br>
+                <hr>
+                <table class="highlight bordered responsive-table">
+                    <thead>
+                        <tr>
+                            <th>Emoción</th>
+                            <th>Frase</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="frase-tabla">
+                       
+                    </tbody>
+                </table>
+            </div>
+            <div class="col s7">
+                    <div id="text-container"></div>
+            </div>
+        </div>
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script src="js/index.js"></script>
+</body>
+
+</html>
