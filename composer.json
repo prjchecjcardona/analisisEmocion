@@ -1,0 +1,10 @@
+{
+    "name": "proyectochec/match",
+    "authors": [
+        {
+            "name": "Juan Camilo",
+            "email": "prjchec.jcardona@umanizales.edu.co"
+        }
+    ],
+    "require": {}
+}
